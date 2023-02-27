@@ -11,7 +11,6 @@ ENV VMESS_WSPATH /dev/start
 ENV VLESS_WSPATH /dev/start
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY nginx.conf /etc/nginx/nginx.conf
 
 RUN mkdir /etc/v2ray /usr/local/v2ray
 COPY config.json /etc/v2ray/
